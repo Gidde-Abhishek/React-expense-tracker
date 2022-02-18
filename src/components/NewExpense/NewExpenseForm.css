@@ -10,6 +10,14 @@
   font-size: 1em;
   font-weight: bold;
   text-align: left;
+  display: inline-flex;
+  background-color: #8ecae6;
+  padding: 1rem;
+  margin: 1.5rem 2rem;
+
+  max-width: 95%;
+  text-align: center;
+  border-radius: 12px;
 }
 
 .newExpenseForm__control label {
@@ -32,7 +40,8 @@
   color: #ffffff;
 }
 
-.newExpenseForm__control button {
+button {
+  margin: 2em;
   font: inherit;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -46,4 +55,15 @@
 .newExpenseForm__control button:hover {
   background-color: #65c498;
   border-color: #65c498;
+}
+
+.addExpenseContainer {
+  display: inline-flex;
+  background-color: #8ecae6;
+  padding: 1rem;
+  margin: 1.5rem 2rem;
+  height: 1em;
+  max-width: 95%;
+  text-align: center;
+  border-radius: 12px;
 }

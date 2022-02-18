@@ -45,33 +45,51 @@ function NewExpenseForm(props) {
     setDate(value);
   };
 
+  const [formVisibility, setFormvisibility] = useState("hide");
+
+  const showAddExpenseForm = () => {
+    setFormvisibility("show");
+  };
+  const hideAddExpenseForm = () => {
+    setFormvisibility("hide");
+  };
   return (
-    <form onSubmit={expenseFormRegister}>
-      <div className="newExpenseForm__controls">
-        <div className="newExpenseForm__control">
-          <label>Title</label>
-          <input type="text" onChange={titleChangeHandler} value={title} />
-        </div>
-        <div className="newExpenseForm__control">
-          <label>Amount</label>
-          <span className="currency-prefix">₹ </span>
-          <input
-            type="number"
-            min={0}
-            step={5}
-            onChange={amountChangeHandler}
-            value={amount}
-          />
-        </div>
-        <div className="newExpenseForm__control">
-          <label>Date</label>
-          <input type="date" onChange={dateChangeHandler} value={date} />
-        </div>
-        <div className="newExpenseForm__control">
-          <button type="submit">Add Expense</button>
-        </div>
+    <div className="addExpense_Container">
+      <div>
+        <button onClick={showAddExpenseForm}>Add Expense</button>
+        <button onClick={hideAddExpenseForm} className={`${formVisibility}`}>
+          Cancel
+        </button>
       </div>
-    </form>
+      <div className={`addExpense__form ${formVisibility}`}>
+        <form onSubmit={expenseFormRegister}>
+          <div className="newExpenseForm__controls ">
+            <div className="newExpenseForm__control">
+              <label>Title</label>
+              <input type="text" onChange={titleChangeHandler} value={title} />
+            </div>
+            <div className="newExpenseForm__control">
+              <label>Amount</label>
+              <span className="currency-prefix">₹ </span>
+              <input
+                type="number"
+                min={0}
+                step={5}
+                onChange={amountChangeHandler}
+                value={amount}
+              />
+            </div>
+            <div className="newExpenseForm__control">
+              <label>Date</label>
+              <input type="date" onChange={dateChangeHandler} value={date} />
+            </div>
+            <div className="newExpenseForm__control">
+              <button type="submit">Add Expense</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
 
