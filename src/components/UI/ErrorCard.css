@@ -1,0 +1,11 @@
+.errorCard {
+  display: flex;
+  border-radius: 3rem;
+  padding: 3rem;
+  background-color: rgb(2, 224, 240);
+  color: black;
+  font: inherit;
+  font-size: large;
+  margin-top: 3rem;
+  gap: 3rem;
+}

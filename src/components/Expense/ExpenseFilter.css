@@ -1,0 +1,24 @@
+.filterContainer {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.filter {
+  background-color: white;
+  padding: 2rem;
+  margin-right: 2em;
+  border-radius: 2rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+label {
+  margin-right: 2em;
+}
+
+select {
+  font: inherit;
+  border: none;
+  background-color: white;
+}

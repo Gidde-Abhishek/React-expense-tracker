@@ -1,0 +1,76 @@
+.container {
+  background-color: #8ecae6;
+  border-radius: 1.5em;
+  display: flex;
+  padding: 0.6rem;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container:hover {
+  background-color: #219ebc;
+  color: white;
+}
+
+.title,
+.date {
+  font-size: 1.5rem;
+}
+
+.title {
+  width: 30rem;
+  font-size: 2em;
+}
+.cost {
+  width: 10em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #219ebc;
+}
+
+.cost::before {
+  content: "₹ ";
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  width: 6em;
+  background-color: #023047;
+  color: white;
+  padding: 0.4em;
+  border-radius: 1em;
+}
+
+.day {
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+.cost {
+  padding: 0.6em;
+  margin: 1rem;
+  background-color: #52b788;
+  color: #ffffff;
+  border-radius: 10em;
+}
+
+.giddeLottieAnimation {
+  margin: 0px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.gstBtn {
+  background-color: #52b788;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+  border: none;
+  font-size: 1em;
+}
